@@ -89,7 +89,12 @@ latte_lib.extends(Load, latte_lib.events);
 		var self = this;
 		var o;
 		try {
-			o = self.require.require("./" + path);
+			if(path[0] == "/") {
+				o = self.require.require(path);
+			}else{
+				o = self.require.require("./" + path);
+			}
+			
 		}catch(err) {
 			console.log(err);
 			self.emit("loadError", path, err);
