@@ -1,16 +1,16 @@
 {
 	"name": "latte_load",
-	"version": "0.0.2",
-	"description":"latte_load",
-	"keywords":["latte", "load", "latte_load"],
-	"author":"qiongtubao",
-	"main":"./index.js",
-	"repository":{
-		"type":"git",
-		"url":"https://github.com/qiongtubao/latte_load.git"
-	},
-	"scripts": {
-		"test": "./node_modules/mocha/bin/mocha  ./test"
+	"version": "0.1.0",
+	"description": "latte_load",
+	"keywords": [
+		"latte",
+		"latte_load"
+	],
+	"author": "qiongtubao",
+	"main": "lib/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qiongtubao/latte_load.git"
 	},
 	"dependencies": {
 		"latte_lib": "*",
@@ -19,7 +19,7 @@
 		"latte_watch": "*"
 	},
 	"devDependencies": {
-		"mocha": "*",
-		"should": "*"
+		"chai": "*",
+		"@types/node": "*"
 	}
 }
